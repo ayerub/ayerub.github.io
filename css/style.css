@@ -1,0 +1,264 @@
+body {
+  background-color: #FBCF1A;
+  color: #232323;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* NavBar */
+
+nav {
+  background-color: #FBCF1A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo a {
+  font-style: italic;
+  color: #232323;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 7px;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.logo:hover a {
+  color: blue;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 340px;
+  margin-bottom: 0;
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+.nav-links a {
+  color: #232323;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.burger {
+  display: none;
+}
+
+.nav-links a:hover {
+  transition-duration: .5s;
+  color: blue;
+  padding-bottom: 5px;
+  border-bottom: 3px dotted #232323;
+}
+
+.burger div {
+  width: 24px;
+  height: 3px;
+  background-color: rgb(214, 214, 214);
+  margin: 4px;
+}
+
+/* HEADER */
+
+header {
+  margin-top: 150px;
+  /* background-color: #F4D948; */
+}
+
+.header-container {
+  display: flex;
+  margin: 0 10% 0 10%;
+}
+
+.name-info {
+ padding-bottom: 15px;
+}
+
+.name-info h1 {
+  font-size: 3em;
+  letter-spacing: .1em;
+}
+
+.about-info {
+  padding-bottom: 30px;
+}
+
+.about-info p {
+  font-size: 1.3em;
+  line-height: .7em;
+  letter-spacing: .1em;
+}
+
+.bio {
+  font-size: 1.1em;
+  padding-right: 100px;
+}
+
+.contact-info {
+  display: flex;
+  padding-top: 25px;
+}
+
+.contact-info p {
+  padding-right: 50px;
+  margin-bottom: 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.fas, .fab {
+  padding-right: 10px;
+  color: #171717;
+}
+
+.contact-info i:hover, 
+.contact-info a:hover {
+  color: #1616dd;
+}
+
+.profile-pic {
+  width: 400px;
+  height: auto;
+  border: 7px solid whitesmoke;
+  border-radius: 50%;
+}
+
+.profile-pic:hover {
+  transform: rotate(-5deg) scale(1.1);
+  transition-duration: 1s;
+}
+
+.second-color {
+  color:#d80505;
+}
+
+.third-color {
+  color: #1616dd;
+}
+
+/* Page Break */
+
+.chevron a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  padding-top: 80px;
+}
+
+.chevron i:hover {
+  transition-duration: .5s;
+  color: blue;
+}
+
+/* Projects */
+.projects-container {
+  background-color: whitesmoke;
+}
+
+.title{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  margin-bottom: 80px;
+  border-bottom: #232323 dotted 4px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10% 0 10%;
+}
+
+.card {
+  background-color: whitesmoke;
+  border: none;
+  margin: 20px;
+  width: 30%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border: #232323 solid 2px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.3em;
+  letter-spacing: .1em;
+}
+
+.card p {
+  padding: 0 10px 0 10px;
+}
+
+.card a {
+  color: red;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: blue;
+}
+
+/* Resume */
+
+.res-pdf {
+  text-align: center;
+  font-size: 1.7em;  
+}
+
+.res-pdf a{
+  text-decoration: none;
+  color: #d80505;
+}
+
+.res-pdf a:hover {
+  color: #1616dd;
+}
+
+.res-img {
+  text-align: center;
+  margin: 75px 10% 75px 10%;
+  border: solid 3px #232323;
+}
+
+.res-img img {
+  width: 100%;
+}
+
+/* Footer */
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.main-footer p {
+  padding-top: 15px;
+  border-top: dotted 4px #232323;
+}
