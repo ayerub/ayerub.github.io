@@ -71,7 +71,7 @@ nav {
 .burger div {
   width: 24px;
   height: 3px;
-  background-color: rgb(214, 214, 214);
+  background-color: #232323;
   margin: 4px;
 }
 
@@ -112,6 +112,7 @@ nav {
 
 .contact-info p {
   padding-right: 50px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -197,7 +198,7 @@ nav {
   background-color: whitesmoke;
   border: none;
   margin: 20px;
-  width: 30%;
+  width: 28%;
 }
 
 .card img {
@@ -279,7 +280,7 @@ nav {
 
 /* MEDIA Queries */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   
   .burger {
     display: inline;
@@ -289,7 +290,7 @@ nav {
     display: none;
   }
   .container {
-    margin: 80px 10% 0 10%;
+    /* margin: 80px 10% 0 10%; */
     text-align: center;
   }
 
@@ -323,3 +324,61 @@ nav {
   }
 
 }
+
+@media (max-width: 1375px) {
+  .contact-info p {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile-pic {
+    width: 250px;
+    border: whitesmoke 3px solid;
+  }
+
+  .contact-info p {
+    display: none;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 990px) {
+  .profile-pic {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 750px) {
+  .profile-pic {
+    display: none;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-info p {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 40%;
+  }
+} */
