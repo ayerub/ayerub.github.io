@@ -157,7 +157,8 @@ nav {
   color: #171717;
 }
 
-.fas:hover {
+.fas:hover , 
+.fab:hover {
   color: #1616dd;
 }
 
@@ -300,12 +301,15 @@ nav {
 
 .main-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   margin-bottom: 75px;
+  margin-top: 40px;
 }
 
-.main-footer p {
-  padding-top: 15px;
+.main-footer a {
+  padding-top: 40px;
   border-top: dotted 4px #232323;
 }
 
@@ -351,12 +355,6 @@ nav {
     text-align: center;
   }
 
-}
-
-@media (max-width: 1375px) {
-  .contact-info p {
-    display: none;
-  }
 }
 
 @media (max-width: 1200px) {
