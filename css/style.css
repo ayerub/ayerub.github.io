@@ -32,7 +32,13 @@ nav {
 }
 
 .logo:hover a {
-  color: blue;
+  color:#1616dd;
+  transition-duration: .3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition-duration: .3s;
 }
 
 .nav-links {
@@ -57,6 +63,7 @@ nav {
 }
 
 /* Mobile Bottom Menu */
+
 .bottom-menu {
   display: none;
   overflow: hidden;
@@ -94,20 +101,13 @@ nav {
 }
 
 .nav-links a:hover {
-  transition-duration: .5s;
-  color: blue;
+  transition-duration: .3s;
+  color:#1616dd;
   padding-bottom: 5px;
-  border-bottom: 3px dotted #232323;
-}
-
-.burger div {
-  width: 24px;
-  height: 3px;
-  background-color: #232323;
-  margin: 4px;
 }
 
 /* Container */
+
 .container {
   margin: 150px 10% 0 10%;
 }
@@ -163,11 +163,6 @@ nav {
   color: #1616dd;
 }
 
-.contact-info i:hover, 
-.contact-info a:hover {
-  color: #1616dd;
-}
-
 .profile-pic {
   width: 400px;
   height: auto;
@@ -218,6 +213,7 @@ nav {
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0;
+  scroll-snap-align: start;
 }
 
 .projects {
@@ -253,12 +249,12 @@ nav {
 }
 
 .card a {
-  color: red;
+  color:#d80505;
   text-decoration: none;
 }
 
 .card a:hover {
-  color: blue;
+  color:#1616dd;
 }
 
 /* Resume */
@@ -319,6 +315,23 @@ nav {
   padding-bottom: 8px;
 }
 
+/* HOVER */
+
+.hover-effect-up:hover {
+  transition: .4s;
+  transform:translateY(-5px);
+}
+
+.card-effect:hover {
+  transition: .5s;
+  transform:translateY(-5px);
+}
+
+.spin-animation:hover {
+  transition: linear;
+  transform: scale(1.3);
+}
+
 /* MEDIA Queries */
 
 @media (max-width: 500px) {
@@ -329,6 +342,16 @@ nav {
 
   .bottom-menu {
     display: inline;
+  }
+
+  .hover-effect-up:hover {
+    transition: 0s;
+    transform:translateY(0px);
+  }
+  
+  .spin-animation:hover {
+    transition-duration: 0s;
+    transform: rotate(0deg);
   }
 }
 
@@ -373,5 +396,10 @@ nav {
 
   .card {
     width: 100%;
+  }
+
+  .card-effect:hover {
+    transition: 0s;
+    transform:translateY(0px);
   }
 }
