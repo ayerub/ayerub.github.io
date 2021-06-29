@@ -1,5 +1,5 @@
 body {
-  background-color: #FBCF1A;
+  background-color: #fbcf1a;
   color: #232323;
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 
 /* NavBar */
 nav {
-  background-color: #FBCF1A;
+  background-color: #fbcf1a;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,13 +32,13 @@ nav {
 }
 
 .logo:hover a {
-  color:#1616dd;
-  transition-duration: .3s;
+  color: #1616dd;
+  transition-duration: 0.3s;
 }
 
 .logo:hover {
   transform: scale(1.1);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .nav-links {
@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-links-bottom {
-  background-color: #FBCF1A;
+  background-color: #fbcf1a;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -101,8 +101,8 @@ nav {
 }
 
 .nav-links a:hover {
-  transition-duration: .3s;
-  color:#1616dd;
+  transition-duration: 0.3s;
+  color: #1616dd;
   padding-bottom: 5px;
 }
 
@@ -118,7 +118,7 @@ nav {
 
 .name-info h1 {
   font-size: 3em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .about-info {
@@ -129,12 +129,19 @@ nav {
   margin: 0;
   font-size: 1.4em;
   line-height: 1.5em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .bio p {
   font-size: 1.1em;
   padding-right: 100px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.test p {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .contact-info {
@@ -153,12 +160,13 @@ nav {
   color: #232323;
 }
 
-.fas, .fab {
+.fas,
+.fab {
   padding-right: 10px;
   color: #171717;
 }
 
-.fas:hover , 
+.fas:hover,
 .fab:hover {
   color: #1616dd;
 }
@@ -176,11 +184,15 @@ nav {
 }
 
 .second-color {
-  color:#d80505;
+  color: #d80505;
 }
 
 .third-color {
   color: #1616dd;
+}
+
+.third-color a {
+  text-decoration: none;
 }
 
 /* Page Break */
@@ -195,7 +207,7 @@ nav {
 }
 
 .chevron i:hover {
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   color: #1616dd;
 }
 
@@ -241,7 +253,7 @@ nav {
 
 .card h2 {
   font-size: 1.3em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .card p {
@@ -249,12 +261,12 @@ nav {
 }
 
 .card a {
-  color:#d80505;
+  color: #d80505;
   text-decoration: none;
 }
 
 .card a:hover {
-  color:#1616dd;
+  color: #1616dd;
 }
 
 /* Resume */
@@ -270,10 +282,10 @@ nav {
 }
 
 .res-pdf {
-  font-size: 1.7em; 
+  font-size: 1.7em;
 }
 
-.res-pdf a{
+.res-pdf a {
   text-decoration: none;
   color: #d80505;
 }
@@ -318,13 +330,13 @@ nav {
 /* HOVER */
 
 .hover-effect-up:hover {
-  transition: .4s;
-  transform:translateY(-5px);
+  transition: 0.4s;
+  transform: translateY(-5px);
 }
 
 .card-effect:hover {
-  transition: .5s;
-  transform:translateY(-5px);
+  transition: 0.5s;
+  transform: translateY(-5px);
 }
 
 .spin-animation:hover {
@@ -335,7 +347,6 @@ nav {
 /* MEDIA Queries */
 
 @media (max-width: 500px) {
-
   .nav-links {
     display: none;
   }
@@ -346,9 +357,9 @@ nav {
 
   .hover-effect-up:hover {
     transition: 0s;
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
-  
+
   .spin-animation:hover {
     transition-duration: 0s;
     transform: rotate(0deg);
@@ -400,6 +411,6 @@ nav {
 
   .card-effect:hover {
     transition: 0s;
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
 }
